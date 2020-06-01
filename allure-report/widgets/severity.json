@@ -1,0 +1,41 @@
+[ {
+  "uid" : "1374a9b82f0bda98",
+  "name" : "registerAccount",
+  "time" : {
+    "start" : 1591003925846,
+    "stop" : 1591003933224,
+    "duration" : 7378
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "72e9ac92161f2b06",
+  "name" : "registerAccountNegativeTest",
+  "time" : {
+    "start" : 1591003905577,
+    "stop" : 1591003909883,
+    "duration" : 4306
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a33289907f7be79",
+  "name" : "testAccountCreationFormNegativeNullOneValue",
+  "time" : {
+    "start" : 1591003916331,
+    "stop" : 1591003924001,
+    "duration" : 7670
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78c1896b5ef01c54",
+  "name" : "registerAccountNegativeTest",
+  "time" : {
+    "start" : 1591003911586,
+    "stop" : 1591003914606,
+    "duration" : 3020
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,185 @@
+{
+  "uid" : "78c1896b5ef01c54",
+  "name" : "registerAccountNegativeTest",
+  "fullName" : "ru.volsu.qa.ui.RegistrationNegativeTests.registerAccountNegativeTest",
+  "historyId" : "3f77d42f9fe86e38dd925c9d7908251c",
+  "time" : {
+    "start" : 1591003911586,
+    "stop" : 1591003914606,
+    "duration" : 3020
+  },
+  "description" : "Verify user registration with incorrect email value.",
+  "descriptionHtml" : "<p>Verify user registration with incorrect email value.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "springTestContextBeforeTestClass",
+    "time" : {
+      "start" : 1591003891583,
+      "stop" : 1591003891596,
+      "duration" : 13
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "springTestContextPrepareTestInstance",
+    "time" : {
+      "start" : 1591003891596,
+      "stop" : 1591003898677,
+      "duration" : 7081
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "openBaseUrl",
+    "time" : {
+      "start" : 1591003909911,
+      "stop" : 1591003911579,
+      "duration" : 1668
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "springTestContextBeforeTestMethod",
+    "time" : {
+      "start" : 1591003909907,
+      "stop" : 1591003909907,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "springTestContextAfterTestMethod",
+    "time" : {
+      "start" : 1591003914613,
+      "stop" : 1591003914613,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "springTestContextAfterTestClass",
+    "time" : {
+      "start" : 1591003924008,
+      "stop" : 1591003924008,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "closeBrowser",
+    "time" : {
+      "start" : 1591003933289,
+      "stop" : 1591003933289,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.volsu.qa.ui.RegistrationNegativeTests"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.volsu.qa.ui.RegistrationNegativeTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "registerAccountNegativeTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "lab7_ui1"
+  }, {
+    "name" : "subSuite",
+    "value" : "ru.volsu.qa.ui.RegistrationNegativeTests"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-VDEJTHE"
+  }, {
+    "name" : "thread",
+    "value" : "9644@DESKTOP-VDEJTHE.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Account(firstName=Pav, lastName=Pes, email=john.doeyahoo.com, password=12345Password!, dayBirth=1, monthBirth=1, yearBirth=2020, address=myaddress, city=Volgograd, state=Texas, zip=12345, country=United States, phone=8800553535)"
+  }, {
+    "name" : "arg1",
+    "value" : "Invalid email address."
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "78c1896b5ef01c54.json",
+  "parameterValues" : [ "Account(firstName=Pav, lastName=Pes, email=john.doeyahoo.com, password=12345Password!, dayBirth=1, monthBirth=1, yearBirth=2020, address=myaddress, city=Volgograd, state=Texas, zip=12345, country=United States, phone=8800553535)", "Invalid email address." ]
+}

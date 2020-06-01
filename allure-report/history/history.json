@@ -1,0 +1,79 @@
+{
+  "9d9e1248889791741f3bec4c7f5ced6c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1374a9b82f0bda98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1591003925846,
+        "stop" : 1591003933224,
+        "duration" : 7378
+      }
+    } ]
+  },
+  "3f77d42f9fe86e38dd925c9d7908251c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "78c1896b5ef01c54",
+      "status" : "passed",
+      "time" : {
+        "start" : 1591003911586,
+        "stop" : 1591003914606,
+        "duration" : 3020
+      }
+    } ]
+  },
+  "c9d5026b2b70efd6ace716248a56604e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7a33289907f7be79",
+      "status" : "passed",
+      "time" : {
+        "start" : 1591003916331,
+        "stop" : 1591003924001,
+        "duration" : 7670
+      }
+    } ]
+  },
+  "8a1f8fe371985e85e80811bd8e751631" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "72e9ac92161f2b06",
+      "status" : "failed",
+      "statusDetails" : "expected [A account using this email address has already been registered. Please enter a valid password or request a new one.] but found [An account using this email address has already been registered. Please enter a valid password or request a new one.]",
+      "time" : {
+        "start" : 1591003905577,
+        "stop" : 1591003909883,
+        "duration" : 4306
+      }
+    } ]
+  }
+}

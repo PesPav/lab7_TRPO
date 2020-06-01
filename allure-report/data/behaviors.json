@@ -1,0 +1,57 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "registerAccountNegativeTest",
+    "uid" : "72e9ac92161f2b06",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1591003905577,
+      "stop" : 1591003909883,
+      "duration" : 4306
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Account(firstName=Pav, lastName=Pes, email=john.doe@yahoo.com, password=12345Password!, dayBirth=1, monthBirth=1, yearBirth=2020, address=myaddress, city=Volgograd, state=Texas, zip=12345, country=United States, phone=8800553535)", "A account using this email address has already been registered. Please enter a valid password or request a new one." ]
+  }, {
+    "name" : "registerAccountNegativeTest",
+    "uid" : "78c1896b5ef01c54",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1591003911586,
+      "stop" : 1591003914606,
+      "duration" : 3020
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Account(firstName=Pav, lastName=Pes, email=john.doeyahoo.com, password=12345Password!, dayBirth=1, monthBirth=1, yearBirth=2020, address=myaddress, city=Volgograd, state=Texas, zip=12345, country=United States, phone=8800553535)", "Invalid email address." ]
+  }, {
+    "name" : "testAccountCreationFormNegativeNullOneValue",
+    "uid" : "7a33289907f7be79",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1591003916331,
+      "stop" : 1591003924001,
+      "duration" : 7670
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Account(firstName=Pav, lastName=Pes, email=iixsdu1doi@test.com, password=1235Password!, dayBirth=1, monthBirth=1, yearBirth=2020, address=Volgograd, city=Texas, state=New Mexico, zip=, country=United States, phone=88005553535)", "There is 1 error\nThe Zip/Postal code you've entered is invalid. It must follow this format: 00000" ]
+  }, {
+    "name" : "registerAccount",
+    "uid" : "1374a9b82f0bda98",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1591003925846,
+      "stop" : 1591003933224,
+      "duration" : 7378
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Account(firstName=Pav, lastName=Pes, email=ozs3luh4fq@test.com, password=12345Password!, dayBirth=1, monthBirth=1, yearBirth=2020, address=myaddress, city=Volgograd, state=Texas, zip=12345, country=United States, phone=8800553535)" ]
+  } ]
+}
