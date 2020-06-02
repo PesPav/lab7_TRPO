@@ -20,24 +20,8 @@ public class AppConfig {
     @Value("${baseUrl}")
     private String baseUrl;
 
-    public String getBaseUrl() {
-        return baseUrl;
-    }
-
-    public void setBaseUrl(String baseUrl) {
-        this.baseUrl = baseUrl;
-    }
-
     @Value("${baseTimeout}")
     private int baseTimeout;
-
-    public void setBaseTimeout(int baseTimeout) {
-        this.baseTimeout = baseTimeout;
-    }
-
-    public int getBaseTimeout() {
-        return baseTimeout;
-    }
 
     @Bean(name = "webDriver")
     public WebDriver webDriver() {

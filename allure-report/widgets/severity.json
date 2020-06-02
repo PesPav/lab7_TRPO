@@ -1,40 +1,40 @@
 [ {
-  "uid" : "1374a9b82f0bda98",
-  "name" : "registerAccount",
+  "uid" : "a7c5a61f857d30f",
+  "name" : "testAccountCreationFormNegativeNullOneValue",
   "time" : {
-    "start" : 1591003925846,
-    "stop" : 1591003933224,
-    "duration" : 7378
+    "start" : 1591104208945,
+    "stop" : 1591104219768,
+    "duration" : 10823
   },
   "status" : "passed",
-  "severity" : "critical"
+  "severity" : "normal"
 }, {
-  "uid" : "72e9ac92161f2b06",
+  "uid" : "8a7c0ffb1482cde2",
   "name" : "registerAccountNegativeTest",
   "time" : {
-    "start" : 1591003905577,
-    "stop" : 1591003909883,
-    "duration" : 4306
+    "start" : 1591104193027,
+    "stop" : 1591104197429,
+    "duration" : 4402
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "7a33289907f7be79",
-  "name" : "testAccountCreationFormNegativeNullOneValue",
+  "uid" : "c73e2c704cdb337c",
+  "name" : "registerAccount",
   "time" : {
-    "start" : 1591003916331,
-    "stop" : 1591003924001,
-    "duration" : 7670
+    "start" : 1591104221748,
+    "stop" : 1591104229842,
+    "duration" : 8094
   },
   "status" : "passed",
-  "severity" : "normal"
+  "severity" : "critical"
 }, {
-  "uid" : "78c1896b5ef01c54",
+  "uid" : "1ce7c3a922dc3fd4",
   "name" : "registerAccountNegativeTest",
   "time" : {
-    "start" : 1591003911586,
-    "stop" : 1591003914606,
-    "duration" : 3020
+    "start" : 1591104199507,
+    "stop" : 1591104203291,
+    "duration" : 3784
   },
   "status" : "passed",
   "severity" : "normal"

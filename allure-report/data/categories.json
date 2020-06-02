@@ -7,13 +7,13 @@
       "name" : "expected [A account using this email address has already been registered. Please enter a valid password or request a new one.] but found [An account using this email address has already been registered. Please enter a valid password or request a new one.]",
       "children" : [ {
         "name" : "registerAccountNegativeTest",
-        "uid" : "72e9ac92161f2b06",
+        "uid" : "8a7c0ffb1482cde2",
         "parentUid" : "213270b879c46e21932c5abcfdce2755",
         "status" : "failed",
         "time" : {
-          "start" : 1591003905577,
-          "stop" : 1591003909883,
-          "duration" : 4306
+          "start" : 1591104193027,
+          "stop" : 1591104197429,
+          "duration" : 4402
         },
         "flaky" : false,
         "newFailed" : false,

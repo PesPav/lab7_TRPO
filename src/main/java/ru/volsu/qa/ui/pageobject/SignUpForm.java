@@ -6,7 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.springframework.stereotype.Component;
+import ru.volsu.qa.ui.pagefactory.TopBar;
 
 @Component
 public class SignUpForm extends BasePage {
@@ -22,6 +24,9 @@ public class SignUpForm extends BasePage {
     private By errorMessage = By.id("create_account_error");
 
     public void fillForm( String email ) {
+        TopBar topBar = PageFactory.initElements(webDriver, TopBar.class);
+        topBar.signIn();
+
         log.debug("Wait for sign up form to be shown.");
         this.waitForElementDisplayed( formContainer );
 
@@ -39,7 +44,7 @@ public class SignUpForm extends BasePage {
         this.waitForElementDisplayed( errorMessage );
         return webDriver.findElement( errorMessage ).getText();
     }
-
+}
 //    public void fillForm( String email ) {
 //        this.waitForElementDisplayed( formContainer );
 //        webDriver.findElement( emailAddressInput ).sendKeys( email );
@@ -53,4 +58,4 @@ public class SignUpForm extends BasePage {
 //        this.waitForElementDisplayed( errorMessage );
 //        return webDriver.findElement( errorMessage ).getText();
 //    }
-}
+

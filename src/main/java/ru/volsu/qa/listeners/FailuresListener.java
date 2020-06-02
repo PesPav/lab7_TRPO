@@ -15,12 +15,33 @@ import ru.volsu.qa.ui.utils.ApplicationContextHolder;
 import java.io.File;
 import java.io.IOException;
 
-//public class FailuresListener implements ITestListener {
 public class FailuresListener extends TestListenerAdapter {
 
     private static final Logger log = LogManager.getLogger(ru.volsu.qa.listeners.FailuresListener.class);
 
+    @Override
+    public void onTestFailure(ITestResult result) {
+        WebDriver driver = ApplicationContextHolder.getBean(WebDriver.class);
+        byte[] srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        saveScreenshot(srcFile);
+    }
 
+    @Attachment(value = "Page screenshot", type = "image/png")
+    private byte[] saveScreenshot(byte[] screenshot) {
+        return screenshot;
+    }
+}
+
+//Object currentClass = result.getInstance();
+//WebDriver driver = ((AbstractTest) currentClass).getDriver();
+//public class FailuresListener implements ITestListener {
+//        @Attachment(value = "Page screenshot", type = "image/png")
+//        public byte[] captureScreenshot() {
+//
+//            WebDriver webDriver = ApplicationContextHolder.getBean(WebDriver.class);
+//            byte[] screenshot = ((TakesScreenshot) webDriver.getWebDriver).getScreenshotAs(OutputType.BYTES);
+//            return screenshot;
+//        }
 //        @Override
 //    public void onTestFailure(ITestResult result) {
 //        this.captureScreenshot();
@@ -30,27 +51,3 @@ public class FailuresListener extends TestListenerAdapter {
 //            log.warn("Failed to save captured screenshot due to error: " + e.getMessage());
 //        }
 //    }
-
-    @Override
-    public void onTestFailure(ITestResult result) {
-        Object currentClass = result.getInstance();
-        //WebDriver driver = ((AbstractTest) currentClass).getDriver();
-        WebDriver driver = ApplicationContextHolder.getBean(WebDriver.class);
-        byte[] srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-        saveScreenshot(srcFile);
-    }
-
-
-    @Attachment(value = "Page screenshot", type = "image/png")
-    private byte[] saveScreenshot(byte[] screenshot) {
-        return screenshot;
-    }
-//        @Attachment(value = "Page screenshot", type = "image/png")
-//        public byte[] captureScreenshot() {
-//
-//            WebDriver webDriver = ApplicationContextHolder.getBean(WebDriver.class);
-//            byte[] screenshot = ((TakesScreenshot) webDriver.getWebDriver).getScreenshotAs(OutputType.BYTES);
-//            return screenshot;
-//        }
-}
-

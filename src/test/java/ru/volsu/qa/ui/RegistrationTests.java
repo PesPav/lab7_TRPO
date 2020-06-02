@@ -41,23 +41,21 @@ public class RegistrationTests extends BaseTest {
     @Description("Verify successful user registration.")
     public void registerAccount(Account account) {
 
-        TopBar topBar = PageFactory.initElements(webdriver, TopBar.class);
-        topBar.signIn();
-
-        //SignUpForm signUpForm = new SignUpForm(webdriver);
         signUpForm.fillForm( account.getEmail() );
         signUpForm.clickCreateAccountButton();
 
-        //AccountCreationForm accountCreationForm = new AccountCreationForm(webdriver);
 
         log.info("Verify 'Create Account' form is opened.");
         Assert.assertTrue(accountCreationForm.isFormDisplayed());
 
         accountCreationForm.fillForm(account);
 
-//        log.info("Verify 'Create Account' form is opened.");
-//        Assert.assertTrue(accountCreationForm.isFormDisplayed());
-
-        Assert.assertTrue(webdriver.getTitle().equals("My account - My Store"));
+        log.info("Verify 'Account info' form is opened.");
+        Assert.assertTrue(accountCreationForm.reg_Ok());
     }
 }
+
+//        log.info("Verify 'Create Account' form is opened.");
+//        Assert.assertTrue(accountCreationForm.isFormDisplayed());
+//AccountCreationForm accountCreationForm = new AccountCreationForm(webdriver);
+//SignUpForm signUpForm = new SignUpForm(webdriver);

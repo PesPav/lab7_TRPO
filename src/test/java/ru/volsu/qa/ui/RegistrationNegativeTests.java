@@ -6,6 +6,7 @@ import io.qameta.allure.SeverityLevel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -53,10 +54,7 @@ public class RegistrationNegativeTests extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Description("Verify user registration with incorrect email value.")
     public void registerAccountNegativeTest(Account account, String errorMessage ) {
-        TopBar topBar = PageFactory.initElements(webdriver, TopBar.class);
-        topBar.signIn();
 
-        //SignUpForm signUpForm = new SignUpForm(webdriver);
         signUpForm.fillForm( account.getEmail() );
         signUpForm.clickCreateAccountButton();
 
@@ -65,10 +63,6 @@ public class RegistrationNegativeTests extends BaseTest {
         log.info("Verify that correct error message is shown.");
         Assert.assertEquals(errorOnPage, errorMessage);
 
-//        System.out.println("Ожидаемая ошибка:"+errorMessage);
-//        System.out.println("Текущая ошибка:"+errorOnPage);
-//
-//        Assert.assertEquals(errorOnPage, errorMessage);
     }
 
     @DataProvider(name = "testAccountCreationFormNegativeNullOneValue")
@@ -97,25 +91,28 @@ public class RegistrationNegativeTests extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Description("Verify user registration with incorrect Zip/Postal code value.")
     public void testAccountCreationFormNegativeNullOneValue(Account account, String errorMessage ) {
-        TopBar topBar = PageFactory.initElements(webdriver, TopBar.class);
-        topBar.signIn();
 
-        //SignUpForm signUpForm = new SignUpForm(webdriver);
         signUpForm.fillForm( account.getEmail() );
         signUpForm.clickCreateAccountButton();
 
-        //AccountCreationForm accountCreationForm = new AccountCreationForm(webdriver);
         accountCreationForm.fillForm(account);
 
         String errorOnPage = accountCreationForm.getErrorMessage();
 
         log.info("Verify that correct error message is shown.");
         Assert.assertEquals(errorOnPage, errorMessage);
+
+    }
+}
+
+//SignUpForm signUpForm = new SignUpForm(webdriver);
 //        System.out.println("Ожидаемая ошибка:"+errorMessage);
 //        System.out.println("Текущая ошибка:"+errorOnPage);
 //
 //        Assert.assertEquals(errorOnPage, errorMessage);
-
-    }
-
-}
+//SignUpForm signUpForm = new SignUpForm(webdriver);
+//AccountCreationForm accountCreationForm = new AccountCreationForm(webdriver);
+//        System.out.println("Ожидаемая ошибка:"+errorMessage);
+//        System.out.println("Текущая ошибка:"+errorOnPage);
+//
+//        Assert.assertEquals(errorOnPage, errorMessage);
